@@ -32,7 +32,7 @@ For the client, you can use either Vite or Create React App. Here are the instru
 
 ### Using Vite
 
-1. On your **root folder**, type the following command:
+1. On your **root directory**, type the following command:
 
     Explanation: This command creates a new Vite application in a directory named `client`.
 
@@ -54,10 +54,14 @@ For the client, you can use either Vite or Create React App. Here are the instru
     ```bash
     npm install
     ```
+6. Once installed, navigate to the Project's root directory using the following command:
+    ```bash
+    cd ..
+    ```
 
 ### Using Create React App
 
-1. On your **root folder**, type the following command:
+1. On your **root directory**, type the following command:
 
     Explanation: This command creates a new Create React App application in a directory named `client`.
 
