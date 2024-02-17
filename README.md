@@ -1,4 +1,6 @@
 # MERN TypeScript Project Setup Guide
+![image](https://github.com/brailyguzman/MERN-TypeScript-Setup-Guide/assets/94770717/d4c2e830-4030-4664-b5f4-e4f629cd4456)
+
 
 Hello, I'm Braily Guzman. Welcome to my guide on setting up a MERN stack project using TypeScript. This guide is designed to help both beginners and experienced developers to set up a fully functional development environment for MERN stack development.
 
