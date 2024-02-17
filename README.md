@@ -11,7 +11,7 @@ Now, let's get started with the setup.
 -   [MongoDB database or MongoDB Community Server](https://www.mongodb.com/try/download/community)
 -   Install TypeScript using the following command:
     ```bash
-        npm install -g typescript
+    npm install -g typescript
     ```
 
 ## Root
