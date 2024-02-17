@@ -1,4 +1,4 @@
-# MERN TypeScript Project Setup
+# MERN TypeScript Project Setup Guide
 
 Hello, I'm Braily Guzman. Welcome to my guide on setting up a MERN stack project using TypeScript. This guide is designed to help both beginners and experienced developers to set up a fully functional development environment for MERN stack development.
 
