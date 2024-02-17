@@ -11,13 +11,13 @@ Now, let's get started with the setup.
 -   [MongoDB database or MongoDB Community Server](https://www.mongodb.com/try/download/community)
 -   Install TypeScript using the following command:
     ```bash
-        npm install -g typescript
+    npm install -g typescript
     ```
 
 ## Root
 
 1. Run the following command to automatically create the `package.json` file:
-    
+
     Explanation: This command initializes a new Node.js project and creates a package.json file with default values.
 
     ```bash
@@ -26,14 +26,17 @@ Now, let's get started with the setup.
 
 ## Client
 
+For the client, you can use either Vite or Create React App. Here are the instructions for both:
+
+### Using Vite
+
 1. On your **root folder**, type the following command:
-    
+
     Explanation: This command creates a new Vite application in a directory named `client`.
 
     ```bash
     npx create-vite@latest client
     ```
-
 
 2. You will see different options, **select React**.
 3. Choose the option: **TypeScript + SWC.**
@@ -42,34 +45,33 @@ Now, let's get started with the setup.
     ```bash
     cd client
     ```
-
-### The following commands need to be run in the client directory.
-
 5. Once in the client directory, run the following command to **install all dependencies**.
-    
+
     Explanation: This command installs the dependencies listed in the package.json file.
 
     ```bash
     npm install
     ```
 
+### Using Create React App
 
-6. Once installed, navigate to the Project’s root directory using the following command:
+1. On your **root folder**, type the following command:
+
+    Explanation: This command creates a new Create React App application in a directory named `client`.
 
     ```bash
-    cd ..
+    npx create-react-app client --template typescript
     ```
 
 ## Server
 
 1. On your **root directory**, let’s create the `server` directory.
-    
+
     Explanation: This command creates a new directory named server.
 
     ```bash
     mkdir server
     ```
-
 
 2. Navigate to the `server` directory using the following command:
 
@@ -86,7 +88,7 @@ Now, let's get started with the setup.
     ```
 
 4. Now, **run the following commands** to install our dependencies
-    
+
     Explanation: These commands install the necessary dependencies for our server. cors is used for enabling CORS, dotenv for loading environment variables, express for building the server, and mongoose for connecting to MongoDB. The development dependencies include TypeScript and the type definitions for our packages, as well as nodemon and ts-node for running our server during development.
 
     ```bash
@@ -95,7 +97,7 @@ Now, let's get started with the setup.
     ```
 
 5. Create a `.gitignore` file and add the following lines to it:
-    
+
     Explanation: The .gitignore file specifies intentionally untracked files that Git should ignore.
 
     ```bash
@@ -103,7 +105,6 @@ Now, let's get started with the setup.
     .env
     dist/
     ```
-
 
 6. Now, let’s setup **TypeScript**, create a file named `tsconfig.json`
 
@@ -127,7 +128,6 @@ Now, let's get started with the setup.
         "exclude": ["node_modules", "dist", "client"]
     }
     ```
-
 
 8. Create a directory named `src` inside your server directory using the following command:
 
@@ -220,8 +220,11 @@ Now, let's get started with the setup.
     npm install --save-dev concurrently
     ```
 
-2. Head over to the package.json that we created in our **project’s root directory**, and add the following lines to the **scripts section**:
+2. Navigate to the package.json file in your project's root directory. This file contains metadata about your project and its dependencies.
 
+3. Depending on the tool you used to create your client (either Vite or Create React App), copy the corresponding code block and paste it into the scripts section of your package.json file.
+
+-   #### Vite
     ```json
     "scripts": {
         "client": "cd client && npm run dev",
@@ -229,14 +232,22 @@ Now, let's get started with the setup.
         "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     ```
+-   #### Create React App
+    ```json
+    "scripts": {
+        "client": "cd client && npm run start",
+        "server": "cd server && npm run dev",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    ```
 
-3. Now, let’s run our **project** using the following command:
+4. Now, let’s run our **project** using the following command:
 
     ```bash
     npm run dev
     ```
 
-4. Now, our `client` and `server` should be running **concurrently**. You should see the following output in your terminal:
+5. Now, our `client` and `server` should be running **concurrently**. You should see the following output in your terminal:
 
     ```bash
     [0] [nodemon] starting `ts-node src/server.ts`
