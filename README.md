@@ -17,8 +17,11 @@ Now, let's get started with the setup.
     ```
 
 ## Root
-
-1. Run the following command to automatically create the `package.json` file:
+1. Create a directory for your project with the following command:
+    ```bash
+    mkdir my-app
+    ```
+2. Run the following command to initialize node in our directory:
 
     Explanation: This command initializes a new Node.js project and creates a package.json file with default values.
 
