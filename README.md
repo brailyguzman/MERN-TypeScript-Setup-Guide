@@ -21,7 +21,11 @@ Now, let's get started with the setup.
     ```bash
     mkdir my-app
     ```
-2. Run the following command to initialize node in our directory:
+2. Navigate to the directory:
+    ```bash
+    cd my-app
+    ```
+4. Run the following command to initialize node in our directory:
 
     Explanation: This command initializes a new Node.js project and creates a package.json file with default values.
 
