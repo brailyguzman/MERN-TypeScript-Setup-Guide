@@ -106,7 +106,7 @@ For the client, you can use either Vite or Create React App. Here are the instru
 
     ```bash
     npm install cors dotenv express mongoose
-    npm install -D typescript @types/express @types/cors @types/node @types/mongoose nodemon ts-node
+    npm install -D typescript @types/express @types/cors @types/node nodemon ts-node
     ```
 
 5. Create a `.gitignore` file and add the following lines to it:
