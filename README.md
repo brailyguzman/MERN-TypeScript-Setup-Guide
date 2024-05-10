@@ -177,8 +177,8 @@ For the client, you can use either Vite or Create React App. Here are the instru
         try {
             await mongoose.connect(uri);
             console.log('Connected to the database');
-        } catch {
-            console.log('Error connecting to the database');
+        } catch(error) {
+            console.error(error);
         }
     })();
 
