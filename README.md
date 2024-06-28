@@ -11,9 +11,9 @@ Now, let's get started with the setup.
 
 -   [Node.js](https://nodejs.org/en/download/) (version 14 or above recommended)
 -   [MongoDB database or MongoDB Community Server](https://www.mongodb.com/try/download/community)
--   Install TypeScript using the following command:
+-   Install the latest version of NPM and TypeScript using the following command:
     ```bash
-    npm install -g typescript
+    npm install -g npm@latest typescript
     ```
 
 ## Root
